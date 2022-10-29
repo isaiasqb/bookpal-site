@@ -11,6 +11,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   outline: red 1px solid;
 }
 
@@ -53,7 +54,26 @@ header nav ul li a{
   font-size: 22px;
 }
 
-li {
-  list-style: none;
+footer{
+  background: var(--cream);
+  width: 100%;
+  padding: 40px 35px;
 }
 
+footer h2{
+  display: inline;
+  color: var(--green);
+  font-size:  30px;
+  margin: 0;
+}
+
+footer div{
+  float: right;
+  line-height: 1.5;
+  text-align: right;
+  color: var(--green)
+}
+
+footer a{
+  color: var(--brown);
+}
