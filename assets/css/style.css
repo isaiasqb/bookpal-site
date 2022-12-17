@@ -105,4 +105,25 @@ section {
 
 .hero-form h3{
   color: var(--mint);
+  font-size: 24px;
+  margin: 0;
 }
+
+.hero-form p {
+  margin: 5px 0 15px 0;
+}
+
+.hero-form label {
+  margin: 0 5px;
+} 
+
+.form-input {
+  border:2px solid var(--mint);
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: var(--green);
+  width: 100%;
+  margin-bottom: 15px;;
+}
+
