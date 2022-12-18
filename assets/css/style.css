@@ -127,3 +127,13 @@ section {
   margin-bottom: 15px;;
 }
 
+.hero-form button {
+  color: var(--light);
+  background-color: var(--green);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+/*HERO STYLES END*/
+
