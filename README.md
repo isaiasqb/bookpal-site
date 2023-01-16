@@ -12,3 +12,5 @@ https://isaiasqb.github.io/bookpal-site/
 
 ## Contribution
 Made with ❤️ by Isaias
+
+UPDATED in Main Branch
