@@ -83,10 +83,10 @@ section {
 }
 
 .hero {
-  background-image: url("../images/hero-bg.jpg");
+  background-image: url("../images/hero-book.jpg");
   height: 600px;
   background-size: cover;
-  background-position:top;
+  background-position:bottom;
   position: relative;
 }
 
