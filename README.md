@@ -15,4 +15,4 @@ Made with ❤️ by Isaias
 
 UPDATED in Main Branch
 
-### ©️2019 BookPal Legal jargon added in local main branch
+### ©️2019 LEgal jargon added remotely
