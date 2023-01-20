@@ -154,19 +154,14 @@ section {
 }
 
 /*HERO STYLES END*/
-
-.intro {
-  text-align: center;
-}
-
-
 .section-title{
   font-size: 55px;
   color: var(--brown);
-  margin-bottom: 35px;
-  padding: 0 100px 20px 100px;
   border-bottom: 6px solid var(--coral);
-  display: inline-block;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
 }
 
 .primary-border{
@@ -182,13 +177,13 @@ section {
   color: var(--green) ;
   width: 80%;
   font-size: 20px;
+  text-align: center;
   /*  common tactic for centering a block element with a width of less than 100% */
   /* Note that this only works for horizontal centering. */
   margin: 0 auto; 
 }
 
 .steps{
-  text-align: center;
   background: var(--mint);
 }
 
@@ -212,6 +207,7 @@ section {
 .steps p{
   color: var(--green);
   font-size:23px;
+  text-align: center;
 }
 
 .steps span{
@@ -220,8 +216,8 @@ section {
 }
 
 /* community section stylyng begins here */
-.community{
-  text-align: center;
+.community{  /*trainers*/
+
 }
 
 .community-perk{
@@ -269,8 +265,6 @@ section {
 
 .contact{
   background-color: var(--mint);
-  /* color: var(--green); */
-  text-align: center;
 }
 
 .contact h2 {
@@ -299,4 +293,8 @@ section {
   line-height: 1.2;
   font-size: 21px;
   font-style: normal;
+}
+
+.flex-row{
+  display: flex;
 }
