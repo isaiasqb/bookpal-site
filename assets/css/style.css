@@ -24,6 +24,9 @@ body {
 header{
   padding: 20px;
   background-color: var(--green);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 header h1 {
@@ -31,7 +34,6 @@ header h1 {
   font-size: 36px;
   color: var(--cream);
   margin: 0;
-  display: inline;
 }
 
 header a {
@@ -40,7 +42,6 @@ header a {
 }
 
 header nav{
-  float: right;
   margin: 7px 0;
 }
 
