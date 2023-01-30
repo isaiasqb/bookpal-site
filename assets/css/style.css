@@ -48,6 +48,7 @@ header h1 {
 header a {
   color: var(--cream);
   text-decoration: none;
+  z-index: 9999;
 }
 
 header nav{
@@ -188,6 +189,74 @@ section {
 .hero-form button:hover {
   background-color: var(--cream);  
 }
+
+/* the span element sorrounding the checkbox and radio buttons will hide the original design */
+.checkbox-wrapper input, .radio-wrapper input{
+  opacity: 0;
+}
+
+/* this prepares the label elements of every checkbox and radio button so that the new buttons can fit */
+.checkbox-wrapper label, .radio-wrapper label {
+  position: relative;
+  left: 10px;
+  margin: 10px;
+  line-height: 1.6;
+}
+
+/* using pseudo elements to add the custom buttons to the form */
+.checkbox-wrapper label::before, .radio-wrapper label::before{
+  content: "";
+  height: 20px;
+  width: 20px;
+  background: rgba(255, 255, 255, 0.69);
+  position: absolute;
+  top: -4px;
+  left: -30px;
+  border-radius: 2px;
+  outline: #4C3B4D solid 2px;
+}
+
+.radio-wrapper label::before{
+  border-radius: 50%;
+}
+
+/* creating the elements that show a checked radio or checkbox button */
+.radio-wrapper label::after{
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background:radial-gradient(circle, var(--cream),  var(--brown));
+  position: absolute;
+  left: -30px;
+  top: -4px;
+}
+
+.checkbox-wrapper label::after{
+  content: "";
+  height: 6px;
+  width: 14px;
+  border-left: 3px solid var(--brown);
+  border-bottom: 3px solid var(--brown);
+  position: absolute;
+  left: -28px;
+  top: 1px;
+  transform: rotate(-58deg);
+}
+
+/* access the state of the covered inputs using a pseudo-class */
+/* the after elements will only be displayed when the state is "checked" */
+.checkbox-wrapper input + label::after, 
+.radio-wrapper input + label::after {
+  content: none;
+}
+
+.checkbox-wrapper input:checked + label::after, 
+.radio-wrapper input:checked + label::after {
+  content: "";
+}
+
+
 
 /*HERO STYLES END*/
 .section-title{
