@@ -2,6 +2,7 @@
 <html lang="eng">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book Pal</title>
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
@@ -24,6 +25,13 @@
 
     <!-- hero/jumbotron -->
     <section class="hero">
+      <div class="hero-cta">
+        <h2>Join Our Community of Readers!</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut cum quae velit veritatis placeat natus fugit totam atque quibusdam illum!
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit nulla eligendi autem debitis qui, hic minima. Voluptatibus eos, tempora officiis ea sint inventore nemo commodi expedita, in quibusdam, culpa aliquid.
+        </p>
+      </div>
+
       <div class="hero-form">
         <h3>Find your BookPal Today</h3>
         <p>Fill out our sign in form and we will reach out to you.</p>
@@ -36,14 +44,20 @@
           <input type="tel" placeholder="Your Phone" name="phone" id="phone" class="form-input"/>
           <p>
             Have you hosted any lecture circles before?
-            <input type="radio" name="lecture-confirm" id="lecture-yes">
-            <label for="lecture-yes">Yes</label>
-            <input type="radio" name="lecture-confirm" id="lecture-no">
-            <label for="lecture-no">No</label>
-          </p>
+            <span class="radio-wrapper">
+              <input type="radio" name="lecture-confirm" id="lecture-yes">
+              <label for="lecture-yes">Yes</label>
+            </span>
+            <span class="radio-wrapper">
+              <input type="radio" name="lecture-confirm" id="lecture-no">
+              <label for="lecture-no">No</label>
+            </span>
+            </p>
           <p>
-            <label for="checkbox">I acknowledge that I am at least 18 years of age </label>
-            <input type="checkbox" name="age-confirm" id="checkbox">
+            <span class="checkbox-wrapper">
+              <input type="checkbox" name="age-confirm" id="checkbox">
+              <label for="checkbox">I acknowledge that I am at least 18 years of age </label>
+            </span>
           </p>
           <button type="submit">
             Meet Your BookPaL
@@ -54,105 +68,159 @@
 
     <!-- "what we do" section -->
     <section id="what-is-bookpal" class="intro">
-      <h2 class="section-title primary-border">What Is BookPal?</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deleniti dolores maxime? Consequatur corporis optio vero accusantium sed fuga debitis!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora assumenda corrupti ab, perferendis eius, deserunt vel hic beatae atque temporibus aperiam voluptatem? At modi eos inventore dolore esse eveniet nobis!
-      </p>
+      <div class="flex-row">
+        <h2 class="section-title primary-border">What Is BookPal?</h2>
+      </div>
+      <div class="flex-row">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deleniti dolores maxime? Consequatur corporis optio vero accusantium sed fuga debitis!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora assumenda corrupti ab, perferendis eius, deserunt vel hic beatae atque temporibus aperiam voluptatem? At modi eos inventore dolore esse eveniet nobis!
+        </p>
+      </div>
     </section>
 
     <!-- "what you do" section -->
     <section id="how-to-join" class="steps">
-      <h2 class="section-title secondary-border">How To Join</h2>
-      <div>
-        <img src="./assets//images/join.svg" alt="">
-        <h3><span>First:</span> Fill Out the Form Above.</h3>
-        <p>You're already thinking about it, so why not?</p>
+      <div class="flex-row">
+        <h2 class="section-title secondary-border">How To Join</h2>
       </div>
     
-      <div>
-        <img src="./assets/images/profile.svg" alt="">
-        <h3><span>After That:</span> Create a Profile.</h3>
-        <p>Let us know what you are looking for in a BookPal partner</p>
+      <div class="step">
+        <h3>First:</h3> 
+        <div class="step-info">
+          <div class="step-img">
+            <img src="./assets/images/keep.svg" alt="">
+          </div>
+          <div class="step-text">
+              <h4>Fill Out the Form Above</h4>
+              <p>Let us know what you are looking for in a BookPal partner</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="step">
+        <h3>After That:</h3> 
+        <div class="step-info">
+          <div class="step-img">
+            <img src="./assets/images/profile.svg" alt="">
+          </div>
+          <div class="step-text">
+              <h4>Create a Profile</h4>
+              <p>Let us know what you are looking for in a BookPal partner</p>
+          </div>
+        </div>
       </div>
     
-      <div>
-        <img src="./assets/images/read.svg" alt="">
-        <h3><span>Then:</span> Start Reading!</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex architecto officiis sequi est cumque aliquam aut.</p>
+      <div class="step">
+        <h3>Then:</h3> 
+        <div class="step-info">
+          <div class="step-img">
+            <img src="./assets/images/read.svg" alt="">
+          </div>
+          <div class="step-text">
+            <h4>Start Reading!</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex architecto officiis sequi est cumque aliquam aut.</p>
+          </div>
+        </div>
       </div>
     
-      <div>
-        <img src="./assets/images/keep.svg" alt="">
-        <h3><span>That's It!:</span> Keep Reading and Engaging.</h3>
-        <p>Bi-weekly checkins with your BookPaL partners will keep you focused</p>
+      <div class="step">
+        <h3>That's It!:</h3> 
+        <div class="step-info">
+          <div class="step-img">
+            <img src="./assets/images/keep.svg" alt="">
+          </div>
+          <div class="step-text">
+            <h4>Keep Reading and Engaging</h4>
+            <p>Bi-weekly checkins with your BookPaL partners will keep you focused</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- "meet the trainers" section -->
-    <section id="meet-our-community" class="community">
-
-      <h2 class="section-title primary-border">Meet Our Community</h2>
-
-      <article class="community-perk">
-        <img src="./assets/images/community1.jpg" alt="people reading">
-        <div class="community-info text-left">
-          <h3>Meeting Rooms</h3>
-          <h4>Meetings and Discussions Daily</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur e error obcaecati incidunt tempora atque laudantium assumenda. Exercitationem, fugiat veniam! Ut necessitatibus, omnis illo vero quam voluptatem quis error consectetur illum ullam quidem ipsa .</p>
-        </div>
-      </article>
-      <article class="community-perk">
-        <div class="community-info text-right">
-          <h3>Daily Lectures</h3>
-          <h4>Lectures Form Professioinals</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consequatur deleniti itaque reprehenderit officia cumque quisquam, perferendis, dolorum tempora repellat ratione error, deserunt iste!.</p>
-        </div>
-        <img src="./assets/images/community2.jpg" alt="woman writing">
-      </article>
-      <article class="community-perk">
-        <img src="./assets/images/community3.jpg" alt="woman reading">
-        <div class="community-info text-left">
-          <h3>E-Reading Devices Rental Service</h3>
-          <h4>The latest devices available, always</h4>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea pariatur officia perferendis ut soluta, dolores iure fugiat repellendus saepe impedit? Omnis est repudiandae vitae quidem voluptates necessitatibus.</p>
-        </div>
-      </article>
-      <article class="community-perk">
-        <div class="community-info text-right">
-          <h3>Author of the Year</h3>
-          <h4>A yearly retreat to meet our most successful author</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non incidunt natus voluptate nemo, omnis corporis saepe provident repellendus fuga facilis.</p>
-        </div>
-        <img src="./assets/images/community4.jpg" alt="woman librarian">
-      </article>
+    <!-- "meet the perks" section -->
+    <section id="meet-our-community">
+      <div class="flex-row">
+        <h2 class="section-title primary-border">Meet Our Community</h2>
+      </div>
+      <div class="community">
+        <article class="community-perk">
+          <img src="./assets/images/community1.jpg" alt="people reading">
+          <div class="community-info">
+            <h3 class="perk-name">Meeting Rooms</h3>
+            <h4 class="perk-role">Meetings and Discussions Daily</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur e error obcaecati incidunt tempora atque laudantium assumenda. Exercitationem, fugiat veniam! Ut necessitatibus, omnis illo vero quam voluptatem quis error consectetur illum ullam quidem ipsa .</p>
+          </div>
+        </article>
+        <article class="community-perk">
+          <img src="./assets/images/community2.jpg" alt="woman writing">
+          <div class="community-info">
+            <h3 class="perk-name">Daily Lectures</h3>
+            <h4 class="perk-role">Lectures Form Professioinals</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consequatur deleniti itaque reprehenderit officia cumque quisquam, perferendis, dolorum tempora repellat ratione error, deserunt iste!.</p>
+          </div>
+        </article>
+        <article class="community-perk">
+          <img src="./assets/images/community3.jpg" alt="woman reading">
+          <div class="community-info">
+            <h3 class="perk-name">E-Reading Devices Rental Service</h3>
+            <h4 class="perk-role">The latest devices available, always</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea pariatur officia perferendis ut soluta, dolores iure fugiat repellendus saepe impedit? Omnis est repudiandae vitae quidem voluptates necessitatibus.</p>
+          </div>
+        </article>
+        <article class="community-perk">
+          <img src="./assets/images/community4.jpg" alt="woman librarian">
+          <div class="community-info">
+            <h3 class="perk-name">Author of the Year</h3>
+            <h4 class="perk-role">A yearly retreat to meet our most successful author</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non incidunt natus voluptate nemo, omnis corporis saepe provident repellendus fuga facilis.</p>
+          </div>
+        </article>
+      </div>
       
     </section>
 
     <!-- "reach out" section -->
     <section id="reach-out" class="contact">
-      <h2 class="section-title">Reach Out</h2>
+      <div class="flex-row">
+        <h2 class="section-title">Reach Out</h2>
+      </div>
+
       <div class="contact-info">
+      <div>
+        <h3>BookPaL</h3>
+        <p>Any questions or concerns before joining?
+          <br />
+        let us know and we'll be happy to talk to you!
+        </p>
+        <address>
+          40 Road Street <br/>
+          Some Town, ON<br/>
+          12345<br />
+          P: 555.PAL.BOOK (555.555.5555)<br/>
+          E: <a href="mailto:info@bookpal.io">info@bookpal.io</a>
+        </address>
+      </div>
+      
+      <div class="contact-form">
+        <h3>Get in Touch!</h3>
+        <form action="">
+          <label for="contact-name">Your Name</label>
+          <input type="text" id="contact-name" placeholder="Your Name" />
+
+          <label for="contact-message">Meessage</label>
+          <textarea id="contact-message" placeholder="Message" ></textarea>
+          
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22413.95978256973!2d-75.73854106124037!3d45.39431506239845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce042fa78a040b%3A0x41870221886a58a1!2s40%20Ruskin%20St%2C%20Ottawa%2C%20ON%20K1Y%204W7!5e0!3m2!1sen!2sca!4v1673486458736!5m2!1sen!2sca" 
         style="border:0;" 
         allowfullscreen="" 
         loading="lazy" 
         referrerpolicy="no-referrer-when-downgrade">
         </iframe>
-        <div>
-          <h3>BookPaL</h3>
-          <p>Any questions or concerns before joining?
-            <br />
-          let us know and we'll be happy to talk to you!
-          </p>
-          <address>
-            40 Road Street <br/>
-            Some Town, ON<br/>
-            12345<br />
-            P: 555.PAL.BOOK (555.555.5555)<br/>
-            E: <a href="mailto:info@bookpal.io">info@bookpal.io</a>
-          </address>
-        </div>
       </div>
     </section>
 
